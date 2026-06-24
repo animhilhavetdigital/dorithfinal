@@ -20,28 +20,11 @@ export default function HowItWorks() {
         "Sans engagement pour démarrer."
       ],
       mockup: (
-        <div className="relative w-full h-full flex items-center justify-center p-6 animate-in fade-in slide-in-from-right-8 duration-700">
-          <div className="w-[85%] max-w-[320px] bg-[#0D121B] border border-white/10 rounded-2xl p-6 shadow-2xl relative z-10 flex flex-col h-[280px]">
-            <h3 className="text-white font-semibold mb-1">Décrire votre cas</h3>
-            <p className="text-white/40 text-xs mb-4">Soyez le plus précis possible</p>
-            
-            <div className="flex-1 bg-[#070A0F] border border-white/5 rounded-xl p-3 relative flex flex-col gap-2">
-              <div className="w-3/4 h-2 bg-white/10 rounded-full"></div>
-              <div className="w-full h-2 bg-white/10 rounded-full"></div>
-              <div className="w-5/6 h-2 bg-white/10 rounded-full"></div>
-              <div className="w-1/2 h-2 bg-white/10 rounded-full"></div>
-              <div className="absolute bottom-3 right-3">
-                 <div className="w-6 h-6 rounded-full bg-[#B98820]/20 flex items-center justify-center">
-                    <div className="w-0 h-0 border-l-[4px] border-l-white/60 border-y-[3px] border-y-transparent border-r-0 ml-0.5"></div>
-                 </div>
-              </div>
-            </div>
-            
-            <button className="w-full mt-4 py-3 rounded-xl bg-white text-black font-bold text-sm shadow-[0_0_20px_rgba(255,255,255,0.3)]">
-              Étape suivante
-            </button>
-          </div>
-        </div>
+        <img 
+          src="/how-1.png" 
+          alt="Situation" 
+          className="absolute inset-0 w-full h-full object-cover animate-in fade-in duration-700" 
+        />
       )
     },
     {
@@ -56,27 +39,11 @@ export default function HowItWorks() {
         "Données chiffrées de bout en bout."
       ],
       mockup: (
-        <div className="relative w-full h-full flex items-center justify-center p-6 animate-in fade-in slide-in-from-right-8 duration-700">
-          <div className="w-[85%] max-w-[320px] bg-[#0D121B] border border-white/10 rounded-2xl p-6 shadow-2xl relative z-10">
-            <h3 className="text-white font-semibold mb-1">Documents requis</h3>
-            <p className="text-white/40 text-xs mb-4">Formats acceptés : PDF, JPG, PNG</p>
-            
-            <div className="w-full h-32 border-2 border-dashed border-[#B98820]/30 rounded-xl flex flex-col items-center justify-center gap-3 bg-[#B98820]/5 hover:bg-[#B98820]/10 transition-colors cursor-pointer mb-4">
-               <div className="p-3 rounded-full bg-[#B98820]/20">
-                 <Upload size={20} className="text-[#B98820]" />
-               </div>
-               <span className="text-xs text-white/50 font-medium">Glisser vos fichiers ici</span>
-            </div>
-
-            <div className="flex items-center justify-between p-3 bg-[#070A0F] border border-white/5 rounded-lg">
-              <div className="flex items-center gap-3">
-                <Paperclip size={14} className="text-white/40" />
-                <span className="text-xs text-white/80">Contrat_signé.pdf</span>
-              </div>
-              <Check size={14} className="text-green-500" />
-            </div>
-          </div>
-        </div>
+        <img 
+          src="/how-2.png" 
+          alt="Justificatifs" 
+          className="absolute inset-0 w-full h-full object-cover animate-in fade-in duration-700" 
+        />
       )
     },
     {
@@ -91,37 +58,11 @@ export default function HowItWorks() {
         "Analyse de conformité au Code de la consommation."
       ],
       mockup: (
-        <div className="relative w-full h-full flex flex-col justify-center p-6 animate-in fade-in slide-in-from-right-8 duration-700">
-          <div className="flex items-center justify-between mb-4">
-            <h3 className="text-white text-xl font-light">Analyse en cours</h3>
-          </div>
-          
-          <div className="w-full bg-[#0D121B] border border-white/10 rounded-2xl p-5 shadow-2xl relative overflow-hidden">
-            <h4 className="text-white text-sm font-semibold mb-1 relative z-10">AI Legal Manager</h4>
-            <p className="text-white/40 text-xs mb-6 relative z-10">Analyse de la conformité de vos contrats en temps réel.</p>
-            
-            <div className="relative w-full h-32 flex items-center justify-center">
-               {/* Abstract Topography/Wave lines */}
-               {[...Array(5)].map((_, i) => (
-                 <div 
-                   key={i} 
-                   className="absolute rounded-full border border-[#B98820]/30 opacity-50"
-                   style={{
-                     width: `${(i + 1) * 20}%`,
-                     height: `${(i + 1) * 40}%`,
-                     animation: `pulse ${2 + i}s infinite alternate`
-                   }}
-                 />
-               ))}
-               <Bot className="text-[#B98820] w-8 h-8 relative z-10" />
-            </div>
-            
-            <div className="flex justify-between items-center mt-4 pt-4 border-t border-white/5 relative z-10">
-              <span className="text-xs text-white/50">Voir les détails</span>
-              <span className="text-white">&rarr;</span>
-            </div>
-          </div>
-        </div>
+        <img 
+          src="/how-3.png" 
+          alt="Analyse IA" 
+          className="absolute inset-0 w-full h-full object-cover animate-in fade-in duration-700" 
+        />
       )
     },
     {
@@ -136,42 +77,11 @@ export default function HowItWorks() {
         "Prêt à être envoyé aux parties concernées."
       ],
       mockup: (
-        <div className="relative w-full h-full flex items-center justify-center p-6 animate-in fade-in slide-in-from-right-8 duration-700">
-          <div className="w-[90%] max-w-[340px] bg-[#181C25] border border-[#B98820]/30 rounded-[2rem] p-6 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
-            <div className="flex justify-between items-center mb-6">
-              <div>
-                <p className="text-white/50 text-[10px] uppercase tracking-widest mb-1">Score de viabilité</p>
-                <div className="text-3xl font-light text-white">85<span className="text-lg text-white/30">/100</span></div>
-              </div>
-              <div className="w-10 h-10 rounded-full bg-[#B98820]/10 flex items-center justify-center">
-                <Shield className="text-[#B98820] w-5 h-5" />
-              </div>
-            </div>
-
-            <div className="w-full h-24 bg-gradient-to-r from-[#B98820] to-[#E3C687] rounded-xl p-4 flex flex-col justify-between shadow-lg shadow-[#B98820]/20 mb-4">
-               <div className="flex justify-between items-center">
-                 <span className="text-black/60 text-xs font-semibold uppercase tracking-wider">Mémoire final</span>
-                 <span className="flex gap-1">
-                   <div className="w-1 h-1 rounded-full bg-black/40"></div>
-                   <div className="w-1 h-1 rounded-full bg-black/40"></div>
-                   <div className="w-1 h-1 rounded-full bg-black/40"></div>
-                 </span>
-               </div>
-               <div className="text-black font-medium text-sm">Dossier_Client_Final.pdf</div>
-            </div>
-
-            <div className="space-y-2 mt-6">
-              <div className="flex justify-between items-center text-xs">
-                <span className="text-white/50">Irrégularités détectées</span>
-                <span className="text-[#B98820] font-medium">3 majeures</span>
-              </div>
-              <div className="flex justify-between items-center text-xs">
-                <span className="text-white/50">Délai de traitement</span>
-                <span className="text-white">Immédiat</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <img 
+          src="/how-4.png" 
+          alt="Mémoire Juridique" 
+          className="absolute inset-0 w-full h-full object-cover animate-in fade-in duration-700" 
+        />
       )
     }
   ];

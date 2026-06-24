@@ -22,7 +22,7 @@ const solutions = [
       "Gain de temps et d'efficacité"
     ],
     icon: FileText,
-    image: "/desktop-1.jpg"
+    image: "/solution-1.png"
   },
   {
     num: "02",
@@ -35,7 +35,7 @@ const solutions = [
       "Recherche d'une résolution rapide des conflits"
     ],
     icon: Scale,
-    image: "/intervention-2.jpeg"
+    image: "/solution-2.png"
   },
   {
     num: "03",
@@ -48,7 +48,7 @@ const solutions = [
       "Défense acharnée de vos intérêts au tribunal"
     ],
     icon: Gavel,
-    image: "/cinematic.jpeg"
+    image: "/solution-3.png"
   }
 ];
 

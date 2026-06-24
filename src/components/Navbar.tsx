@@ -39,9 +39,9 @@ export default function Navbar() {
             onClick={() => scrollToSection("hero")}
           >
             <img 
-              src="/DroitHabitat-Expertisezzz.png" 
+              src="/logo.png" 
               alt="Droit Habitat Expertise Logo" 
-              className="h-6 w-auto object-contain"
+              className="h-10 w-auto object-contain"
             />
           </div>
 

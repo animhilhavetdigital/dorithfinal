@@ -37,7 +37,7 @@ export default function Footer() {
             <img 
               src="/logo.png" 
               alt="Droit Habitat Expertise Logo" 
-              className="h-8 w-auto object-contain brightness-0 invert"
+              className="h-8 w-auto object-contain"
             />
           </div>
           <p className="text-sm text-brand-text-muted leading-relaxed font-light max-w-xs">
