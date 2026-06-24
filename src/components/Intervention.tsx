@@ -11,9 +11,7 @@ export default function Intervention() {
   };
 
   const images = [
-    { src: "/intervention-1.jpeg", alt: "Intervention étape 1" },
-    { src: "/intervention-2.jpeg", alt: "Intervention étape 2" },
-    { src: "/intervention-3.jpeg", alt: "Intervention étape 3" }
+    { src: "/intervention-2.jpeg", alt: "Intervention étape" }
   ];
 
   return (
@@ -48,8 +46,8 @@ export default function Intervention() {
           <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
         </button>
 
-        {/* The 3 Image Cards */}
-        <div className="fade-up-intervention mt-16 md:mt-20 w-full grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        {/* The Image Card */}
+        <div className="fade-up-intervention mt-16 md:mt-20 w-full max-w-3xl mx-auto">
           {images.map((img, idx) => (
             <div 
               key={idx} 
