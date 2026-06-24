@@ -221,8 +221,8 @@ export default function FormSection() {
           {/* Header */}
           <div className="flex items-center justify-between px-6 py-4 border-b border-white/5 bg-[#0D131F]">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-brand-accent/20 border border-brand-accent/30 flex items-center justify-center">
-                <Bot className="text-brand-accent w-5 h-5" />
+              <div className="w-10 h-10 rounded-full bg-[#B98820]/20 border border-[#B98820]/50 flex items-center justify-center shadow-[0_0_15px_rgba(185,136,32,0.5)] transition-all duration-1000 animate-pulse">
+                <Bot className="text-[#B98820] w-5 h-5" />
               </div>
               <div>
                 <h3 className="text-white font-semibold text-sm">Assistant IA</h3>
@@ -263,8 +263,8 @@ export default function FormSection() {
                         <User className="text-white/70 w-4 h-4" />
                       </div>
                     ) : (
-                      <div className="w-8 h-8 rounded-full bg-brand-accent/20 border border-brand-accent/30 flex items-center justify-center">
-                        <Bot className="text-brand-accent w-4 h-4" />
+                      <div className="w-8 h-8 rounded-full bg-[#B98820]/20 border border-[#B98820]/50 flex items-center justify-center shadow-[0_0_10px_rgba(185,136,32,0.4)] animate-pulse">
+                        <Bot className="text-[#B98820] w-4 h-4" />
                       </div>
                     )}
                   </div>
@@ -286,8 +286,8 @@ export default function FormSection() {
               <div className="flex justify-start">
                 <div className="flex gap-3 max-w-[85%] flex-row">
                   <div className="shrink-0 mt-1">
-                    <div className="w-8 h-8 rounded-full bg-brand-accent/20 border border-brand-accent/30 flex items-center justify-center">
-                      <Bot className="text-brand-accent w-4 h-4" />
+                    <div className="w-8 h-8 rounded-full bg-[#B98820]/20 border border-[#B98820]/50 flex items-center justify-center shadow-[0_0_10px_rgba(185,136,32,0.4)] animate-pulse">
+                      <Bot className="text-[#B98820] w-4 h-4" />
                     </div>
                   </div>
                   <div className="px-5 py-4 rounded-2xl bg-[#0D131F] border border-brand-border/30 rounded-tl-none flex items-center gap-1.5">
