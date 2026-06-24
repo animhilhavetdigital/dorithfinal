@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
-import { FileText, Scale, Gavel, ArrowRight, CheckCircle2 } from "lucide-react";
+import { FileText, Scale, Gavel, ArrowRight, CheckCircle2, ClipboardCheck } from "lucide-react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -13,6 +13,19 @@ if (typeof window !== "undefined") {
 const solutions = [
   {
     num: "01",
+    title: "Test d'éligibilité",
+    highlight: "gratuit",
+    text: "Vérifiez en quelques minutes si votre dossier présente des irrégularités qui justifient une annulation du contrat.",
+    features: [
+      "Évaluation instantanée de votre situation",
+      "Sans aucun engagement financier",
+      "Analyse préliminaire de votre demande"
+    ],
+    icon: ClipboardCheck,
+    image: "/solution-0.png"
+  },
+  {
+    num: "02",
     title: "Mémoire juridique",
     highlight: "prêt à l’emploi",
     text: "Générez votre mémoire juridique complet pour faire valoir vos droits de manière structurée et professionnelle.",
@@ -25,7 +38,7 @@ const solutions = [
     image: "/solution-1.png"
   },
   {
-    num: "02",
+    num: "03",
     title: "Service médiation &",
     highlight: "mise en demeure",
     text: "Nous agissons pour obtenir la résolution amiable de votre dossier avant d'envisager des poursuites plus lourdes.",
@@ -38,7 +51,7 @@ const solutions = [
     image: "/solution-2.png"
   },
   {
-    num: "03",
+    num: "04",
     title: "Action en justice",
     highlight: "par avocat",
     text: "En cas d’escroquerie avérée ou de refus de résolution amiable, nos avocats partenaires prennent le relais pour vous défendre.",
