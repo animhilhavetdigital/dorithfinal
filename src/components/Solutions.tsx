@@ -121,11 +121,6 @@ export default function Solutions() {
                       </li>
                     ))}
                   </ul>
-                  
-                  <button onClick={scrollToForm} className="group flex items-center justify-center gap-3 px-8 py-4 rounded-full text-sm font-bold uppercase tracking-wider text-black bg-brand-accent hover:bg-transparent hover:text-brand-accent border border-brand-accent transition-all duration-300 w-full sm:w-fit cursor-pointer">
-                    Activer cette option
-                    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-                  </button>
                 </div>
                 
                 {/* Image Content */}
