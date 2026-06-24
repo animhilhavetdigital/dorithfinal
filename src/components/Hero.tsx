@@ -94,11 +94,11 @@ export default function Hero() {
         </div>
 
         {/* Dashboard Preview Image Block (Saasta style) */}
-        <div className="fade-up-text mt-12 max-w-7xl w-full rounded-3xl shadow-2xl shadow-brand-accent/5 backdrop-blur-sm relative group overflow-hidden">
+        <div className="fade-up-text mt-12 max-w-7xl w-full rounded-3xl shadow-2xl shadow-brand-accent/5 backdrop-blur-sm relative group overflow-hidden border border-white/10 p-2 bg-white/5">
           <img
-            src="/desktop-1.jpg"
+            src="/hero-image.jpeg"
             alt="Aperçu du tableau de bord Droit Habitat Expertise"
-            className="w-full h-auto rounded-2xl object-cover"
+            className="w-full h-auto rounded-2xl object-cover border border-[#B98820]/20"
             loading="eager"
           />
         </div>
