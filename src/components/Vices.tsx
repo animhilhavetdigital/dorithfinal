@@ -60,12 +60,9 @@ export default function Vices() {
                     <AlertOctagon size={16} className="text-brand-accent" />
                  </div>
                </div>
-               <h3 className="text-base font-semibold text-white leading-snug group-hover:text-brand-accent transition-colors">
+               <h3 className="text-base font-semibold text-white leading-snug group-hover:text-brand-accent transition-colors mt-auto">
                  {vice}
                </h3>
-               <p className="mt-auto pt-4 text-xs text-brand-text-secondary font-light">
-                 Une faille potentielle dans votre contrat.
-               </p>
             </div>
           ))}
         </div>
