@@ -35,11 +35,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div 
-            className="flex items-center cursor-pointer group bg-white/95 py-1.5 px-3 rounded-full h-9 shadow-inner"
+            className="flex items-center cursor-pointer group py-1.5 px-3 rounded-full h-9"
             onClick={() => scrollToSection("hero")}
           >
             <img 
-              src="/logo.png" 
+              src="/DroitHabitat-Expertisezzz.png" 
               alt="Droit Habitat Expertise Logo" 
               className="h-6 w-auto object-contain"
             />

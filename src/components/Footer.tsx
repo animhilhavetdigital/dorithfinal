@@ -25,10 +25,10 @@ export default function Footer() {
         <div className="max-w-md flex flex-col gap-4">
           <div 
             onClick={scrollToHero}
-            className="flex items-center cursor-pointer group bg-white/95 py-1.5 px-3 rounded-full h-9 shadow-inner self-start"
+            className="flex items-center cursor-pointer group py-1.5 px-3 rounded-full h-9 self-start"
           >
             <img 
-              src="/logo.png" 
+              src="/DroitHabitat-Expertisezzz.png" 
               alt="Droit Habitat Expertise Logo" 
               className="h-6 w-auto object-contain"
             />
