@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --background: #02050D;
+  --foreground: #FFFFFF;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-bg: #02050D;
+  --color-brand-black: #000000;
+  --color-brand-card: #0A0F18;
+  --color-brand-accent: #B98820;
+  --color-brand-border: rgba(185, 136, 32, 0.18);
+  --color-brand-text: #FFFFFF;
+  --color-brand-text-secondary: rgba(255, 255, 255, 0.72);
+  --color-brand-text-muted: rgba(255, 255, 255, 0.55);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--background);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Premium background grid & radial gradients */
+.bg-grid-subtle {
+  background-image: linear-gradient(to right, rgba(185, 136, 32, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(185, 136, 32, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.bg-radial-glow {
+  background: radial-gradient(circle 600px at 50% 200px, rgba(185, 136, 32, 0.08), transparent 80%);
+}
+
+.bg-radial-glow-section {
+  background: radial-gradient(circle 400px at 50% 50%, rgba(185, 136, 32, 0.05), transparent 80%);
+}
+
+/* Custom selection styling */
+::selection {
+  background-color: rgba(185, 136, 32, 0.3);
+  color: #FFFFFF;
+}
+
+/* Smooth custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #02050D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(185, 136, 32, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(185, 136, 32, 0.5);
+}
