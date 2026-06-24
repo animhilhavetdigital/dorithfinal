@@ -26,18 +26,22 @@ export default function OffresPage() {
         </div>
 
         {/* Offers Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+        <div className="max-w-md mx-auto">
           
           {/* Offer 1 */}
-          <div className="flex flex-col bg-[#0A0F18] border border-brand-border/40 rounded-3xl p-8 hover:border-[#B98820]/50 transition-all duration-300 relative group animate-in fade-in slide-in-from-bottom-8 duration-700 delay-100">
-            <div className="mb-8">
+          <div className="flex flex-col bg-[#0D131F] border border-[#B98820]/50 shadow-2xl shadow-[#B98820]/5 rounded-3xl p-8 transition-all duration-300 relative group animate-in fade-in slide-in-from-bottom-8 duration-700 delay-100">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#B98820] text-black text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
+              L'offre unique
+            </div>
+
+            <div className="mb-8 mt-2 text-center">
               <h3 className="text-xl font-bold mb-2 text-white">Mémoire juridique prêt à l’emploi</h3>
-              <p className="text-sm text-brand-text-secondary h-10">Obtenez un dossier clair, structuré et exploitable en 72h.</p>
+              <p className="text-sm text-brand-text-secondary">Obtenez un dossier clair, structuré et exploitable en 72h.</p>
             </div>
             
-            <div className="mb-8">
-              <div className="text-4xl font-black text-[#B98820]">99 €</div>
-              <div className="text-xs text-brand-text-muted mt-1 uppercase tracking-wider font-semibold">Paiement unique</div>
+            <div className="mb-8 text-center border-y border-white/5 py-6">
+              <div className="text-5xl font-black text-[#B98820]">99 €</div>
+              <div className="text-xs text-brand-text-muted mt-2 uppercase tracking-wider font-semibold">Paiement unique</div>
             </div>
 
             <ul className="space-y-4 mb-10 flex-1">
@@ -60,88 +64,9 @@ export default function OffresPage() {
 
             <Link 
               href="/paiement?offre=memoire-juridique"
-              className="w-full py-4 flex items-center justify-center gap-2 rounded-xl text-sm font-bold uppercase tracking-wider text-black bg-[#B98820] hover:bg-[#B98820]/90 transition-colors mt-auto"
+              className="w-full py-4 flex items-center justify-center gap-2 rounded-xl text-sm font-bold uppercase tracking-wider text-black bg-[#B98820] hover:bg-[#B98820]/90 shadow-lg shadow-[#B98820]/20 transition-all mt-auto"
             >
               Choisir cette option
-            </Link>
-          </div>
-
-          {/* Offer 2 (Highlighted) */}
-          <div className="flex flex-col bg-[#0D131F] border border-[#B98820]/50 rounded-3xl p-8 shadow-2xl shadow-[#B98820]/5 relative group animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200 transform md:-translate-y-4">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#B98820] text-black text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
-              Recommandé
-            </div>
-            
-            <div className="mb-8 mt-2">
-              <h3 className="text-xl font-bold mb-2 text-white">Service médiation & mise en demeure</h3>
-              <p className="text-sm text-brand-text-secondary h-10">Nous prenons le relais pour engager une démarche amiable structurée.</p>
-            </div>
-            
-            <div className="mb-8">
-              <div className="text-4xl font-black text-[#B98820]">199 €</div>
-              <div className="text-xs text-brand-text-muted mt-1 uppercase tracking-wider font-semibold">Paiement unique</div>
-            </div>
-
-            <ul className="space-y-4 mb-10 flex-1">
-              <li className="flex items-start gap-3 text-sm font-semibold text-white">
-                <Check size={18} className="text-[#B98820] shrink-0 mt-0.5" />
-                <span>Tout le contenu de l’offre 1</span>
-              </li>
-              {[
-                "Envoi des courriers selon mandat client",
-                "Mise en demeure",
-                "Relances automatisées et suivies",
-                "Médiation amiable",
-                "Négociation engagée avec les parties concernées"
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-sm text-brand-text-secondary">
-                  <Check size={18} className="text-[#B98820] shrink-0 mt-0.5" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-
-            <Link 
-              href="/paiement?offre=mediation-mise-en-demeure"
-              className="w-full py-4 flex items-center justify-center gap-2 rounded-xl text-sm font-bold uppercase tracking-wider text-black bg-[#B98820] hover:bg-[#B98820]/90 transition-colors mt-auto shadow-lg shadow-[#B98820]/20"
-            >
-              Choisir cette option
-            </Link>
-          </div>
-
-          {/* Offer 3 */}
-          <div className="flex flex-col bg-[#070B12] border border-brand-border/20 rounded-3xl p-8 hover:border-brand-border/60 transition-all duration-300 relative group animate-in fade-in slide-in-from-bottom-8 duration-700 delay-300">
-            <div className="mb-8">
-              <h3 className="text-xl font-bold mb-2 text-white">Relais avocat partenaire</h3>
-              <p className="text-sm text-brand-text-secondary h-10">Votre dossier est transmis de façon structurée à un avocat partenaire lorsque l’escalade devient nécessaire.</p>
-            </div>
-            
-            <div className="mb-8">
-              <div className="text-lg font-medium text-[#B98820] leading-tight">Tarification séparée<br/>par l’avocat</div>
-              <div className="text-xs text-brand-text-muted mt-1 uppercase tracking-wider font-semibold opacity-0">.</div>
-            </div>
-
-            <ul className="space-y-4 mb-10 flex-1">
-              {[
-                "Dossier préparé",
-                "Pièces ordonnées",
-                "Chronologie claire",
-                "Irrégularités potentielles identifiées",
-                "Transfert exploitable",
-                "Relais vers avocat partenaire"
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-sm text-brand-text-secondary">
-                  <Check size={18} className="text-white/40 shrink-0 mt-0.5" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-
-            <Link 
-              href="/paiement?offre=relais-avocat"
-              className="w-full py-4 flex items-center justify-center gap-2 rounded-xl text-sm font-bold uppercase tracking-wider text-white bg-transparent border border-white/20 hover:bg-white/5 transition-colors mt-auto"
-            >
-              Être orienté si nécessaire
             </Link>
           </div>
 
