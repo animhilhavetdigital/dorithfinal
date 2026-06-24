@@ -55,7 +55,7 @@ export default function Hero() {
     <section
       id="hero"
       ref={containerRef}
-      className="relative min-h-screen flex flex-col justify-center items-center py-16 overflow-hidden bg-grid-subtle"
+      className="relative min-h-screen flex flex-col justify-center items-center pt-28 pb-16 overflow-hidden bg-grid-subtle"
     >
       {/* Background Radial Glow */}
       <div className="absolute inset-0 bg-radial-glow pointer-events-none" />
