@@ -62,25 +62,23 @@ export default function Hero() {
 
       <div className="relative z-10 w-full max-w-7xl px-6 flex flex-col items-center text-center">
         {/* Pain badge indicator */}
-        <div className="fade-up-text inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-border bg-brand-card/60 backdrop-blur-sm text-xs font-semibold text-brand-accent tracking-wide uppercase mb-6">
-          <span className="w-2 h-2 rounded-full bg-brand-accent animate-pulse" />
-          Contrats & crédits abusifs
+        <div className="fade-up-text inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-sage/30 bg-brand-card/80 backdrop-blur-sm text-xs font-semibold text-brand-sage tracking-wide uppercase mb-6 animate-pulse">
+          <span className="w-2 h-2 rounded-full bg-brand-sage animate-ping" />
+          Analyse de conformité & protection de l'habitat
         </div>
 
         {/* Big Emotion / Pain Headline */}
         <div ref={textRef} className="max-w-4xl flex flex-col items-center">
-          <h1 className="fade-up-text text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-extrabold tracking-tight text-white leading-tight md:leading-tight max-w-4xl mx-auto">
-            <span className="block">Dès lors, tout est fait pour vous amener</span>
-            <span className="block">à <span className="text-brand-accent underline decoration-brand-border underline-offset-4">signer</span>, à contracter, à vous faire culpabiliser</span>
-            <span className="block">par des manœuvres <span className="text-brand-accent font-semibold italic">souvent frauduleuses</span>.</span>
+          <h1 className="fade-up-text text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight md:leading-tight max-w-4xl mx-auto uppercase">
+            <span className="text-brand-accent">STOP</span> à mon contrat et <span className="text-brand-accent underline decoration-brand-border underline-offset-4">crédits abusifs</span>
           </h1>
-          <p className="fade-up-text mt-6 text-base sm:text-lg md:text-xl text-brand-text-secondary max-w-2xl font-light">
-            Vous vous sentez piégé par un engagement signé sous pression ou manipulation ? Découvrez comment reprendre le contrôle de votre situation.
+          <p className="fade-up-text mt-6 text-base sm:text-lg md:text-xl text-brand-text-secondary max-w-3xl font-light">
+            En <span className="font-semibold text-white">2 minutes</span>, réalisez une analyse <span className="text-brand-sage font-semibold uppercase underline decoration-brand-sage/40 underline-offset-4">gratuite</span> de votre situation et voyez s'il existe des éléments pour sortir de ce piège.
           </p>
 
           {/* Primary CTA */}
           <div className="fade-up-text mt-8 flex flex-col items-center gap-4 w-full">
-            <h3 className="text-2xl md:text-3xl lg:text-4xl font-black text-[#B98820] mb-3">
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-black text-brand-accent mb-3">
               C’est là qu’on intervient !
             </h3>
             <button
@@ -98,7 +96,7 @@ export default function Hero() {
           <img
             src="/hero-image.png"
             alt="Aperçu du tableau de bord Droit Habitat Expertise"
-            className="w-full h-auto rounded-2xl object-cover border border-[#B98820]/20"
+            className="w-full h-auto rounded-2xl object-cover border border-brand-accent/20"
             loading="eager"
           />
         </div>
@@ -113,7 +111,7 @@ export default function Hero() {
                 className="hero-card group relative flex flex-row items-start gap-3 min-w-[280px] xl:min-w-0 snap-start"
               >
                 {/* Icon Box */}
-                <div className="shrink-0 relative z-10 inline-flex p-3.5 sm:p-4 rounded-2xl bg-brand-bg border border-brand-accent/30 text-brand-accent shadow-[0_0_15px_rgba(185,136,32,0.1)] group-hover:shadow-[0_0_20px_rgba(185,136,32,0.3)] transition-all duration-300">
+                <div className="shrink-0 relative z-10 inline-flex p-3.5 sm:p-4 rounded-2xl bg-brand-bg border border-brand-accent/30 text-brand-accent shadow-[0_0_15px_rgba(226,182,92,0.1)] group-hover:shadow-[0_0_20px_rgba(226,182,92,0.3)] transition-all duration-300">
                   <Icon size={22} className="w-5 h-5 sm:w-6 sm:h-6" />
                 </div>
                 

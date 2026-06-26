@@ -216,18 +216,18 @@ export default function FormSection() {
         </div>
 
         {/* Chat Panel */}
-        <div className="mx-auto max-w-3xl rounded-3xl bg-[#0A0F18] border border-brand-border/60 shadow-2xl flex flex-col overflow-hidden h-[600px] md:h-[650px] relative">
+        <div className="mx-auto max-w-3xl rounded-3xl bg-brand-card border border-brand-border/60 shadow-2xl flex flex-col overflow-hidden h-[600px] md:h-[650px] relative">
           
           {/* Header */}
-          <div className="flex items-center justify-between px-6 py-4 border-b border-white/5 bg-[#0D131F]">
+          <div className="flex items-center justify-between px-6 py-4 border-b border-white/5 bg-brand-bg/60">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-[#B98820]/20 border border-[#B98820]/50 flex items-center justify-center shadow-[0_0_15px_rgba(185,136,32,0.5)] transition-all duration-1000 animate-pulse">
-                <Bot className="text-[#B98820] w-5 h-5" />
+              <div className="w-10 h-10 rounded-full bg-brand-sage/20 border border-brand-sage/50 flex items-center justify-center shadow-[0_0_15px_rgba(143,158,139,0.4)] transition-all duration-1000 animate-pulse">
+                <Bot className="text-brand-sage w-5 h-5" />
               </div>
               <div>
                 <h3 className="text-white font-semibold text-sm">Assistant IA</h3>
-                <p className="text-xs text-brand-accent/70 flex items-center gap-1">
-                  <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
+                <p className="text-xs text-brand-sage/80 flex items-center gap-1">
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-sage animate-pulse"></span>
                   En ligne
                 </p>
               </div>
@@ -259,12 +259,12 @@ export default function FormSection() {
                   {/* Avatar */}
                   <div className="shrink-0 mt-1">
                     {msg.role === "user" ? (
-                      <div className="w-8 h-8 rounded-full bg-[#1A2235] border border-white/10 flex items-center justify-center">
+                      <div className="w-8 h-8 rounded-full bg-[#102E44] border border-white/10 flex items-center justify-center">
                         <User className="text-white/70 w-4 h-4" />
                       </div>
                     ) : (
-                      <div className="w-8 h-8 rounded-full bg-[#B98820]/20 border border-[#B98820]/50 flex items-center justify-center shadow-[0_0_10px_rgba(185,136,32,0.4)] animate-pulse">
-                        <Bot className="text-[#B98820] w-4 h-4" />
+                      <div className="w-8 h-8 rounded-full bg-brand-sage/20 border border-brand-sage/50 flex items-center justify-center shadow-[0_0_10px_rgba(143,158,139,0.3)] animate-pulse">
+                        <Bot className="text-brand-sage w-4 h-4" />
                       </div>
                     )}
                   </div>
@@ -272,8 +272,8 @@ export default function FormSection() {
                   {/* Bubble */}
                   <div className={`px-4 py-3 rounded-2xl text-sm leading-relaxed shadow-md ${
                     msg.role === "user" 
-                      ? "bg-[#1A2235] border border-white/10 text-white rounded-tr-none" 
-                      : "bg-[#0D131F] border border-brand-border/30 text-white/90 rounded-tl-none"
+                      ? "bg-[#102E44] border border-white/10 text-white rounded-tr-none" 
+                      : "bg-brand-bg/90 border border-brand-border/30 text-white/90 rounded-tl-none"
                   }`}>
                     {msg.text}
                   </div>
@@ -286,14 +286,14 @@ export default function FormSection() {
               <div className="flex justify-start">
                 <div className="flex gap-3 max-w-[85%] flex-row">
                   <div className="shrink-0 mt-1">
-                    <div className="w-8 h-8 rounded-full bg-[#B98820]/20 border border-[#B98820]/50 flex items-center justify-center shadow-[0_0_10px_rgba(185,136,32,0.4)] animate-pulse">
-                      <Bot className="text-[#B98820] w-4 h-4" />
+                    <div className="w-8 h-8 rounded-full bg-brand-sage/20 border border-brand-sage/50 flex items-center justify-center shadow-[0_0_10px_rgba(143,158,139,0.3)] animate-pulse">
+                      <Bot className="text-brand-sage w-4 h-4" />
                     </div>
                   </div>
-                  <div className="px-5 py-4 rounded-2xl bg-[#0D131F] border border-brand-border/30 rounded-tl-none flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-brand-accent/60 animate-bounce" style={{ animationDelay: "0ms" }}></span>
-                    <span className="w-1.5 h-1.5 rounded-full bg-brand-accent/60 animate-bounce" style={{ animationDelay: "150ms" }}></span>
-                    <span className="w-1.5 h-1.5 rounded-full bg-brand-accent/60 animate-bounce" style={{ animationDelay: "300ms" }}></span>
+                  <div className="px-5 py-4 rounded-2xl bg-brand-bg/90 border border-brand-border/30 rounded-tl-none flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-sage/60 animate-bounce" style={{ animationDelay: "0ms" }}></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-sage/60 animate-bounce" style={{ animationDelay: "150ms" }}></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-sage/60 animate-bounce" style={{ animationDelay: "300ms" }}></span>
                   </div>
                 </div>
               </div>
@@ -301,7 +301,7 @@ export default function FormSection() {
           </div>
 
           {/* Input Area */}
-          <div className="p-4 bg-[#0D131F] border-t border-white/5 relative z-20">
+          <div className="p-4 bg-brand-bg/60 border-t border-white/5 relative z-20">
             {!isTyping && currentQ && (
               <div className="animate-in slide-in-from-bottom-2 fade-in duration-300">
                 
@@ -320,13 +320,13 @@ export default function FormSection() {
                   <div className="flex gap-3">
                     <button
                       onClick={() => handleUserSubmit("Oui", "Oui")}
-                      className="flex-1 py-3.5 rounded-xl text-sm font-semibold text-white bg-[#1A2235] border border-white/10 hover:border-brand-accent/50 hover:bg-[#1A2235]/80 transition-colors"
+                      className="flex-1 py-3.5 rounded-xl text-sm font-semibold text-white bg-[#102E44] border border-white/10 hover:border-brand-accent/50 hover:bg-[#102E44]/80 transition-colors"
                     >
                       Oui
                     </button>
                     <button
                       onClick={() => handleUserSubmit("Non", "Non")}
-                      className="flex-1 py-3.5 rounded-xl text-sm font-semibold text-white bg-[#1A2235] border border-white/10 hover:border-brand-accent/50 hover:bg-[#1A2235]/80 transition-colors"
+                      className="flex-1 py-3.5 rounded-xl text-sm font-semibold text-white bg-[#102E44] border border-white/10 hover:border-brand-accent/50 hover:bg-[#102E44]/80 transition-colors"
                     >
                       Non
                     </button>
@@ -340,7 +340,7 @@ export default function FormSection() {
                       <button
                         key={choice}
                         onClick={() => handleUserSubmit(choice, choice)}
-                        className="py-3 px-4 rounded-xl text-sm font-semibold text-white bg-[#1A2235] border border-white/10 hover:border-brand-accent/50 hover:bg-[#1A2235]/80 transition-colors"
+                        className="py-3 px-4 rounded-xl text-sm font-semibold text-white bg-[#102E44] border border-white/10 hover:border-brand-accent/50 hover:bg-[#102E44]/80 transition-colors"
                       >
                         {choice}
                       </button>
@@ -361,7 +361,7 @@ export default function FormSection() {
                             className={`py-2 px-4 rounded-full text-xs font-medium border transition-colors flex items-center gap-2 ${
                               isSelected 
                                 ? "bg-brand-accent/20 border-brand-accent text-brand-accent" 
-                                : "bg-[#1A2235] border-white/10 text-white/70 hover:border-white/30"
+                                : "bg-[#102E44] border-white/10 text-white/70 hover:border-white/30"
                             }`}
                           >
                             {isSelected && <Check size={12} />}
@@ -389,7 +389,7 @@ export default function FormSection() {
                       value={inputValue}
                       onChange={(e) => setInputValue(e.target.value)}
                       placeholder={currentQ.placeholder}
-                      className="flex-1 bg-[#1A2235] border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder:text-white/30 outline-none focus:border-brand-accent/50 focus:ring-1 focus:ring-brand-accent/50 transition-all text-sm"
+                      className="flex-1 bg-[#102E44] border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder:text-white/30 outline-none focus:border-brand-accent/50 focus:ring-1 focus:ring-brand-accent/50 transition-all text-sm"
                     />
                     <button
                       type="submit"
@@ -410,7 +410,7 @@ export default function FormSection() {
                       value={inputValue}
                       onChange={(e) => setInputValue(e.target.value)}
                       placeholder="Tapez votre réponse ici..."
-                      className="w-full bg-[#1A2235] border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 outline-none focus:border-brand-accent/50 focus:ring-1 focus:ring-brand-accent/50 transition-all text-sm resize-none custom-scrollbar"
+                      className="w-full bg-[#102E44] border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 outline-none focus:border-brand-accent/50 focus:ring-1 focus:ring-brand-accent/50 transition-all text-sm resize-none custom-scrollbar"
                     />
                     <button
                       type="submit"
@@ -437,11 +437,11 @@ export default function FormSection() {
                       let resTitle = "";
                       let resText = "";
                       let themeClass = "";
-
+ 
                       if (score >= 5) {
                         resTitle = "Bonne nouvelle, vous êtes éligible !";
                         resText = "Votre dossier présente plusieurs éléments favorables. Nous vous recommandons de découvrir l’offre la plus adaptée à votre situation.";
-                        themeClass = "border-green-500/50 bg-green-500/10 text-green-400";
+                        themeClass = "border-brand-sage/50 bg-brand-sage/10 text-brand-sage";
                       } else if (score >= 3) {
                         resTitle = "Votre dossier mérite une vérification plus poussée";
                         resText = "Votre situation nécessite une analyse complémentaire. Nous vous invitons à consulter nos offres pour aller plus loin.";

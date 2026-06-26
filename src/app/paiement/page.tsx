@@ -96,29 +96,29 @@ function PaymentContent() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="flex gap-4 p-5 rounded-2xl bg-[#0A0F18] border border-brand-border/40">
-              <Lock className="text-[#B98820] shrink-0 mt-0.5" size={24} />
+            <div className="flex gap-4 p-5 rounded-2xl bg-brand-card border border-brand-border/40">
+              <Lock className="text-brand-accent shrink-0 mt-0.5" size={24} />
               <div>
                 <h4 className="font-bold text-white text-sm mb-1">Paiement sécurisé</h4>
                 <p className="text-xs text-brand-text-muted">Transaction chiffrée de bout en bout.</p>
               </div>
             </div>
-            <div className="flex gap-4 p-5 rounded-2xl bg-[#0A0F18] border border-brand-border/40">
-              <Zap className="text-[#B98820] shrink-0 mt-0.5" size={24} />
+            <div className="flex gap-4 p-5 rounded-2xl bg-brand-card border border-brand-border/40">
+              <Zap className="text-brand-accent shrink-0 mt-0.5" size={24} />
               <div>
                 <h4 className="font-bold text-white text-sm mb-1">Ouverture immédiate</h4>
                 <p className="text-xs text-brand-text-muted">Votre espace est créé instantanément.</p>
               </div>
             </div>
-            <div className="flex gap-4 p-5 rounded-2xl bg-[#0A0F18] border border-brand-border/40">
-              <FileText className="text-[#B98820] shrink-0 mt-0.5" size={24} />
+            <div className="flex gap-4 p-5 rounded-2xl bg-brand-card border border-brand-border/40">
+              <FileText className="text-brand-accent shrink-0 mt-0.5" size={24} />
               <div>
                 <h4 className="font-bold text-white text-sm mb-1">Accès au formulaire d’entrée</h4>
                 <p className="text-xs text-brand-text-muted">Pour décrire votre cas en détail.</p>
               </div>
             </div>
-            <div className="flex gap-4 p-5 rounded-2xl bg-[#0A0F18] border border-brand-border/40">
-              <ShieldCheck className="text-[#B98820] shrink-0 mt-0.5" size={24} />
+            <div className="flex gap-4 p-5 rounded-2xl bg-brand-card border border-brand-border/40">
+              <ShieldCheck className="text-brand-accent shrink-0 mt-0.5" size={24} />
               <div>
                 <h4 className="font-bold text-white text-sm mb-1">Liste des pièces à fournir</h4>
                 <p className="text-xs text-brand-text-muted">Un guide clair sur ce dont nous avons besoin.</p>
@@ -137,33 +137,33 @@ function PaymentContent() {
 
         {/* Right Column: Order Summary Card & Payment Form */}
         <div className="lg:col-span-5 animate-in fade-in slide-in-from-right-4 duration-700 delay-100">
-          <div className="bg-[#0D131F] border border-[#B98820]/40 rounded-3xl p-8 shadow-2xl sticky top-8 flex flex-col h-full overflow-hidden relative">
+          <div className="bg-brand-card border border-brand-border/60 rounded-3xl p-8 shadow-2xl sticky top-8 flex flex-col h-full overflow-hidden relative">
             
             {!showPaymentForm ? (
               <div className="flex flex-col h-full animate-in fade-in duration-500">
-                <h3 className="text-sm font-bold uppercase tracking-widest text-[#B98820] mb-6">Récapitulatif de votre choix</h3>
+                <h3 className="text-sm font-bold uppercase tracking-widest text-brand-accent mb-6">Récapitulatif de votre choix</h3>
                 
                 <div className="mb-6 pb-6 border-b border-white/10">
                   <h2 className="text-2xl font-bold text-white mb-2">{offer.name}</h2>
                   <div className="text-3xl font-black text-white">{offer.price}</div>
                 </div>
-
+ 
                 <p className="text-sm text-brand-text-secondary font-medium mb-6">
                   {offer.promise}
                 </p>
-
+ 
                 <ul className="space-y-3 mb-10 flex-1">
                   {offer.list.map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-xs text-brand-text-secondary">
-                      <ShieldCheck size={14} className="text-[#B98820] shrink-0 mt-0.5" />
+                      <ShieldCheck size={14} className="text-brand-sage shrink-0 mt-0.5" />
                       <span>{item}</span>
                     </li>
                   ))}
                 </ul>
-
+ 
                 <button 
                   onClick={() => setShowPaymentForm(true)}
-                  className="w-full py-4 flex items-center justify-center gap-2 rounded-xl text-sm font-bold uppercase tracking-wider text-black bg-[#B98820] hover:bg-[#B98820]/90 transition-all shadow-lg shadow-[#B98820]/20 hover:scale-[1.02] cursor-pointer"
+                  className="w-full py-4 flex items-center justify-center gap-2 rounded-xl text-sm font-bold uppercase tracking-wider text-black bg-brand-accent hover:bg-brand-accent/90 transition-all shadow-lg shadow-brand-accent/20 hover:scale-[1.02] cursor-pointer"
                 >
                   {offer.btn}
                 </button>
@@ -176,61 +176,61 @@ function PaymentContent() {
                   </button>
                   <h3 className="text-lg font-bold text-white">Paiement par carte</h3>
                 </div>
-
+ 
                 <div className="mb-6 flex justify-between items-center text-sm">
                   <span className="text-brand-text-secondary">Montant à régler :</span>
-                  <span className="text-xl font-black text-[#B98820]">{offer.price}</span>
+                  <span className="text-xl font-black text-brand-accent">{offer.price}</span>
                 </div>
-
+ 
                 <form onSubmit={handlePaymentSubmit} className="flex-1 flex flex-col">
                   <div className="space-y-4 mb-8">
                     <div className="flex flex-col gap-2">
                       <label className="text-xs font-bold uppercase text-brand-text-secondary">Titulaire de la carte</label>
-                      <input required type="text" placeholder="Nom complet" className="w-full bg-[#0A0F18] border border-white/10 rounded-xl px-4 py-3 text-white text-sm outline-none focus:border-[#B98820]/50 focus:ring-1 focus:ring-[#B98820]/50 transition-all" />
+                      <input required type="text" placeholder="Nom complet" className="w-full bg-brand-bg border border-white/10 rounded-xl px-4 py-3 text-white text-sm outline-none focus:border-brand-accent/50 focus:ring-1 focus:ring-brand-accent/50 transition-all" />
                     </div>
                     
                     <div className="flex flex-col gap-2">
                       <label className="text-xs font-bold uppercase text-brand-text-secondary">Numéro de carte</label>
                       <div className="relative">
                         <CreditCard className="absolute left-4 top-1/2 -translate-y-1/2 text-white/40" size={18} />
-                        <input required type="text" placeholder="0000 0000 0000 0000" className="w-full bg-[#0A0F18] border border-white/10 rounded-xl pl-12 pr-4 py-3 text-white text-sm outline-none focus:border-[#B98820]/50 focus:ring-1 focus:ring-[#B98820]/50 transition-all font-mono" />
+                        <input required type="text" placeholder="0000 0000 0000 0000" className="w-full bg-brand-bg border border-white/10 rounded-xl pl-12 pr-4 py-3 text-white text-sm outline-none focus:border-brand-accent/50 focus:ring-1 focus:ring-brand-accent/50 transition-all font-mono" />
                       </div>
                     </div>
-
+ 
                     <div className="grid grid-cols-2 gap-4">
                       <div className="flex flex-col gap-2">
                         <label className="text-xs font-bold uppercase text-brand-text-secondary">Date d'exp.</label>
-                        <input required type="text" placeholder="MM/AA" className="w-full bg-[#0A0F18] border border-white/10 rounded-xl px-4 py-3 text-white text-sm outline-none focus:border-[#B98820]/50 focus:ring-1 focus:ring-[#B98820]/50 transition-all font-mono" />
+                        <input required type="text" placeholder="MM/AA" className="w-full bg-brand-bg border border-white/10 rounded-xl px-4 py-3 text-white text-sm outline-none focus:border-brand-accent/50 focus:ring-1 focus:ring-brand-accent/50 transition-all font-mono" />
                       </div>
                       <div className="flex flex-col gap-2">
                         <label className="text-xs font-bold uppercase text-brand-text-secondary">CVC</label>
-                        <input required type="password" placeholder="123" maxLength={4} className="w-full bg-[#0A0F18] border border-white/10 rounded-xl px-4 py-3 text-white text-sm outline-none focus:border-[#B98820]/50 focus:ring-1 focus:ring-[#B98820]/50 transition-all font-mono" />
+                        <input required type="password" placeholder="123" maxLength={4} className="w-full bg-brand-bg border border-white/10 rounded-xl px-4 py-3 text-white text-sm outline-none focus:border-brand-accent/50 focus:ring-1 focus:ring-brand-accent/50 transition-all font-mono" />
                       </div>
                     </div>
                   </div>
-
+ 
                   <button 
                     type="submit"
                     disabled={isProcessing}
-                    className="w-full py-4 mt-auto flex items-center justify-center gap-2 rounded-xl text-sm font-bold uppercase tracking-wider text-black bg-[#B98820] hover:bg-[#B98820]/90 transition-all shadow-lg shadow-[#B98820]/20 disabled:opacity-70 cursor-pointer"
+                    className="w-full py-4 mt-auto flex items-center justify-center gap-2 rounded-xl text-sm font-bold uppercase tracking-wider text-black bg-brand-accent hover:bg-brand-accent/90 transition-all shadow-lg shadow-brand-accent/20 disabled:opacity-70 cursor-pointer"
                   >
                     {isProcessing ? <Loader2 className="animate-spin" size={18} /> : <><Lock size={16} /> Confirmer le paiement</>}
                   </button>
                 </form>
-
+ 
               </div>
             )}
           </div>
         </div>
-
+ 
       </div>
     </div>
   );
 }
-
+ 
 export default function PaymentPage() {
   return (
-    <main className="min-h-screen bg-[#02050D] text-white pt-24 pb-16 px-6 relative overflow-hidden">
+    <main className="min-h-screen bg-brand-bg text-white pt-24 pb-16 px-6 relative overflow-hidden">
       {/* Background gradients */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-accent/5 blur-[150px] pointer-events-none" />
       <Suspense fallback={<div className="text-center pt-32 text-brand-text-secondary">Chargement...</div>}>

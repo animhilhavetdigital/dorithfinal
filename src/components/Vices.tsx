@@ -50,13 +50,13 @@ export default function Vices() {
           {vicesList.map((vice, idx) => (
             <div 
               key={idx} 
-              className="vice-card w-full p-6 rounded-3xl bg-[#0D131F] border border-brand-border/30 hover:border-brand-accent/60 transition-all duration-300 flex flex-col group shadow-[0_0_15px_rgba(0,0,0,0.5)] hover:bg-[#131A28] cursor-default"
+              className="vice-card w-full p-6 rounded-3xl bg-brand-card border border-brand-border/30 hover:border-brand-accent/60 transition-all duration-300 flex flex-col group shadow-[0_0_15px_rgba(0,0,0,0.5)] hover:bg-brand-card/80 cursor-default"
             >
                <div className="flex justify-between items-center mb-6">
                  <span className="text-xs font-bold text-brand-accent/50 group-hover:text-brand-accent transition-colors">
                    VICE {(idx + 1).toString().padStart(2, '0')}
                  </span>
-                 <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#02050D] border border-brand-border group-hover:border-brand-accent transition-colors">
+                 <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-brand-bg border border-brand-border group-hover:border-brand-accent transition-colors">
                     <AlertOctagon size={16} className="text-brand-accent" />
                  </div>
                </div>

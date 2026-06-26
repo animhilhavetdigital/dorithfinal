@@ -45,14 +45,14 @@ export default function Footer() {
           </p>
           
           <div className="flex items-center gap-3 mt-2">
-            <a href="#" className="w-8 h-8 rounded-full bg-[#1A2235] hover:bg-[#B98820] flex items-center justify-center transition-colors group">
-              <LinkIcon size={14} className="text-[#B98820] group-hover:text-black transition-colors" />
+            <a href="#" className="w-8 h-8 rounded-full bg-brand-card hover:bg-brand-accent flex items-center justify-center transition-colors group">
+              <LinkIcon size={14} className="text-brand-accent group-hover:text-black transition-colors" />
             </a>
-            <a href="#" className="w-8 h-8 rounded-full bg-[#1A2235] hover:bg-[#B98820] flex items-center justify-center transition-colors group">
-              <TwitterIcon size={14} className="text-[#B98820] group-hover:text-black transition-colors" />
+            <a href="#" className="w-8 h-8 rounded-full bg-brand-card hover:bg-brand-accent flex items-center justify-center transition-colors group">
+              <TwitterIcon size={14} className="text-brand-accent group-hover:text-black transition-colors" />
             </a>
-            <a href="#" className="w-8 h-8 rounded-full bg-[#1A2235] hover:bg-[#B98820] flex items-center justify-center transition-colors group">
-              <FacebookIcon size={14} className="text-[#B98820] group-hover:text-black transition-colors" />
+            <a href="#" className="w-8 h-8 rounded-full bg-brand-card hover:bg-brand-accent flex items-center justify-center transition-colors group">
+              <FacebookIcon size={14} className="text-brand-accent group-hover:text-black transition-colors" />
             </a>
           </div>
         </div>
@@ -62,7 +62,7 @@ export default function Footer() {
           <h3 className="text-white font-bold text-lg">Pages</h3>
           <ul className="flex flex-col gap-3 text-sm font-medium">
             <li>
-              <button onClick={() => scrollToSection("hero")} className="text-[#B98820] hover:text-[#B98820]/80 transition-colors cursor-pointer text-left">
+              <button onClick={() => scrollToSection("hero")} className="text-brand-accent hover:text-brand-accent/80 transition-colors cursor-pointer text-left">
                 Accueil
               </button>
             </li>
@@ -99,12 +99,12 @@ export default function Footer() {
           <h3 className="text-white font-bold text-lg">Contact Us</h3>
           <ul className="flex flex-col gap-4 text-sm text-brand-text-secondary">
             <li>
-              <a href="mailto:contact@droithabitat.fr" className="hover:text-[#B98820] transition-colors">
+              <a href="mailto:contact@droithabitat.fr" className="hover:text-brand-accent transition-colors">
                 contact@droithabitat.fr
               </a>
             </li>
             <li>
-              <a href="tel:+33123456789" className="hover:text-[#B98820] transition-colors">
+              <a href="tel:+33123456789" className="hover:text-brand-accent transition-colors">
                 +33 1 23 45 67 89
               </a>
             </li>

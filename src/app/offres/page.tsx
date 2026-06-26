@@ -4,7 +4,7 @@ import { Check, ArrowRight, ShieldAlert, ArrowLeft } from "lucide-react";
 
 export default function OffresPage() {
   return (
-    <main className="min-h-screen bg-[#02050D] text-white pt-24 pb-16 px-6 relative overflow-hidden">
+    <main className="min-h-screen bg-brand-bg text-white pt-24 pb-16 px-6 relative overflow-hidden">
       {/* Background gradients */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brand-accent/10 blur-[120px] pointer-events-none" />
       
@@ -18,7 +18,7 @@ export default function OffresPage() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 animate-in fade-in slide-in-from-bottom-4 duration-700">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-6">
-            Choisissez la voie qui vous <span className="text-[#B98820]">convient</span>
+            Choisissez la voie qui vous <span className="text-brand-accent">convient</span>
           </h1>
           <p className="text-lg text-brand-text-secondary leading-relaxed font-light">
             Quel que soit votre choix, nous mettons à votre disposition un cadre clair pour transformer votre situation en dossier exploitable et avancer de façon structurée.
@@ -29,8 +29,8 @@ export default function OffresPage() {
         <div className="max-w-md mx-auto">
           
           {/* Offer 1 */}
-          <div className="flex flex-col bg-[#0D131F] border border-[#B98820]/50 shadow-2xl shadow-[#B98820]/5 rounded-3xl p-8 transition-all duration-300 relative group animate-in fade-in slide-in-from-bottom-8 duration-700 delay-100">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#B98820] text-black text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
+          <div className="flex flex-col bg-brand-card border border-brand-accent/50 shadow-2xl shadow-brand-accent/5 rounded-3xl p-8 transition-all duration-300 relative group animate-in fade-in slide-in-from-bottom-8 duration-700 delay-100">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-brand-accent text-black text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
               L'offre unique
             </div>
 
@@ -40,7 +40,7 @@ export default function OffresPage() {
             </div>
             
             <div className="mb-8 text-center border-y border-white/5 py-6">
-              <div className="text-5xl font-black text-[#B98820]">99 €</div>
+              <div className="text-5xl font-black text-brand-accent">99 €</div>
               <div className="text-xs text-brand-text-muted mt-2 uppercase tracking-wider font-semibold">Paiement unique</div>
             </div>
 
@@ -56,7 +56,7 @@ export default function OffresPage() {
                 "Courrier prêt à envoyer"
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-sm text-brand-text-secondary">
-                  <Check size={18} className="text-[#B98820] shrink-0 mt-0.5" />
+                  <Check size={18} className="text-brand-sage shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -64,7 +64,7 @@ export default function OffresPage() {
 
             <Link 
               href="/paiement?offre=memoire-juridique"
-              className="w-full py-4 flex items-center justify-center gap-2 rounded-xl text-sm font-bold uppercase tracking-wider text-black bg-[#B98820] hover:bg-[#B98820]/90 shadow-lg shadow-[#B98820]/20 transition-all mt-auto"
+              className="w-full py-4 flex items-center justify-center gap-2 rounded-xl text-sm font-bold uppercase tracking-wider text-black bg-brand-accent hover:bg-brand-accent/90 shadow-lg shadow-brand-accent/20 transition-all mt-auto"
             >
               Choisir cette option
             </Link>
@@ -74,7 +74,7 @@ export default function OffresPage() {
 
         {/* Legal Boundary Line */}
         <div className="mt-20 max-w-3xl mx-auto flex items-center gap-4 p-6 rounded-2xl bg-brand-bg/50 border border-brand-border/30">
-          <ShieldAlert size={24} className="text-[#B98820] shrink-0" />
+          <ShieldAlert size={24} className="text-brand-accent shrink-0" />
           <p className="text-sm text-brand-text-secondary font-light">
             Droit Habitat prépare, structure et oriente. L’avocat prend le relais uniquement si nécessaire, selon son propre cadre.
           </p>
