@@ -11,7 +11,7 @@ export default function Intervention() {
   };
 
   const images = [
-    { src: "/intervention-2.jpeg", alt: "Intervention étape" }
+    { src: "/intervention-2.png", alt: "Intervention étape" }
   ];
 
   return (
